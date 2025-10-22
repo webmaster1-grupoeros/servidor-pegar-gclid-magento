@@ -1,4 +1,10 @@
 {
-  "functions": { "api/*.js": { "runtime": "nodejs20.x" } },
-  "routes": [{ "src": "/(.*)", "dest": "/api/save-gclid.js" }]
+  "functions": {
+    "api/*.js": {
+      "runtime": "vercel-nodejs@20.0.0"
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/save-gclid.js" }
+  ]
 }
